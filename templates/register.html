@@ -1,0 +1,61 @@
+<!-- Shortcut: fextends, then press tab to change name-->
+{% extends 'layout/base.html' %}
+
+<!-- Shortcut: fblock, then press tab to change name-->
+{% block body %}
+
+<!-- shortcut to generate a vaible location => .container>.row>.col-md-4 -->
+
+<div class="container">
+    <div class="row form-row">
+        <div class="col-lg-4">
+            <h1 class="my-4 text-primary text-light">Register An Account</h1>
+            <form class="shadow-lg p-4 bg-light">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                    <div class="form-text" id="passHelp">Password should be min 6 chars</div>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmpass" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmpass" name="confirmpass">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block css %}
+
+<style>
+    .form-row {
+        display: flex;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main {
+        background-color: aquamarine;
+        background-position-x: center;
+        background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VhJTIwYmVhY2h8ZW58MHx8MHx8&w=1000&q=80');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+</style>
+
+{% endblock %}
