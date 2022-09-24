@@ -10,10 +10,20 @@
     <div class="row form-row">
         <div class="col-lg-4">
             <h1 class="my-4 text-primary text-light">Register An Account</h1>
-            <form class="shadow-lg p-4 bg-light">
+            <!-- shortcut : fif and ffor-->
+            {% if error_list %}
+            {% for msg in error_list %}
+            <p class="text-danger text-small">
+                {{ msg|e }}
+            </p>
+            
+            {% endfor %}
+            {% endif %}
+        
+            <form class="shadow-lg p-4 bg-light" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email">
                 </div>
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
