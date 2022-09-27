@@ -2,34 +2,30 @@
 {% extends 'layout/base.html' %}
 
 <!-- Shortcut: fblock, then press tab to change name-->
+
 {% block body %}
 
 <h1>This is flask</h1>
-<p>Very basic sample page</p>
+<p>very basic sample page</p>
 
 {% endblock %}
 
 {% block css %}
-
 <style>
- main {
-   
+  main {
     display: flex;
     width: 100%;
-    height: 90vh;
-    background-color: rgb(232, 241, 238);
-    background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=600');
+    height: 95vh;
+    background-color: rgb(248, 248, 244);
+    background-image: url('https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    color: rgb(10, 10, 5);
     flex-flow: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
- }
-
+    color: rgb(25, 26, 24);
+  }
 </style>
-
 {% endblock %}
