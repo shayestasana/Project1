@@ -24,6 +24,8 @@ class User(db.Model):
     def __str__(self):
         return f'{self.username}({self.id})'
 
+
+
 def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/app.sqlite'
